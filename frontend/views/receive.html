@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-slate-50 justify-between group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
@@ -30,14 +31,14 @@
         </p>
       </div>
       <div>
-        <div class="flex px-4 py-3">
+        <div class="flex px-4 py-3 w-full max-w-md mx-auto">
           <a id="startFaceScanBtn" href="/face-scan"
             class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-[#0c7ff2] text-slate-50 text-base font-bold leading-normal tracking-[0.015em]"
           >
             <span class="truncate">Start Face Scan</span>
           </a>
         </div>
-        <div id="claim-success" class="hidden flex flex-col items-center justify-center py-6">
+        <div id="claim-success" class="hidden flex flex-col items-center justify-center py-6 px-2 text-center">
           <div class="text-green-600 text-xl font-bold mb-2">🎉 Success!</div>
           <div class="text-[#0d141c] text-base font-normal mb-2">You have claimed your funds.</div>
           <div id="claim-details" class="text-[#0d141c] text-sm font-mono"></div>
